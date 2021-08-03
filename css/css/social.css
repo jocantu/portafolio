@@ -1,0 +1,13 @@
+.social {
+  padding-block-end: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    padding-block-end: 0px;
+    order: 3;
+  }
+}

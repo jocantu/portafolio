@@ -1,0 +1,19 @@
+.header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 3px grey;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
+  background: var(--blue1);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+}

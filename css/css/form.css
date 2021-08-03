@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 0;
+  max-inline-size: 540px;
+  margin: auto;
+}
+
+.form .title {
+  margin: 0;
+}
+
+.form p {
+  text-align: center;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font: var(--button);
+}
+
+.form input,
+.form textarea {
+  border: 1px solid #858c94;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font: var(--body1);
+  margin-block-start: 8px;
+}

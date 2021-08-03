@@ -1,0 +1,43 @@
+@import "./css/button.css";
+@import "./css/header.css";
+@import "./css/button-icon.css";
+@import "./css/hero.css";
+@import "./css/wrapper.css";
+@import "./css/menu.css";
+@import "./css/intro.css";
+@import "./css/comment-card.css";
+@import "./css/project.css";
+@import "./css/social.css";
+@import "./css/footer.css";
+@import "./css/form.css";
+@import "./css/title.css";
+
+:root {
+  --fontBase: "Ubuntu", sans-serif;
+  --headline1: bold 95px / 153px var(--fontBase);
+  --headline2: bold 59px / 95px var(--fontBase);
+  --headline3: bold 48px / 78px var(--fontBase);
+  --headline4: bold 34px / 75px var(--fontBase);
+  --headline5: bold 24px / 39px var(--fontBase);
+  --body1: normal 16px / 26px var(--fontBase);
+  --body2: normal 14px / 23px var(--fontBase);
+  --caption: normal 12px / 19.5px var(--fontBase);
+  --button: bold 16px / 26px var(--fontBase);
+
+  --blue1: #e2f3f5;
+  --blue2: #22d1ee;
+  --blue3: #3d5af1;
+  --blue4: #0e153a;
+  --yellow: #f3f169;
+}
+
+body {
+  background-color: var(--blue1);
+  color: var(--blue4);
+  font: var(--body1);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,20 @@
+.button {
+  background: var(--yellow);
+  color: var(--blue4);
+  border: none;
+  border-radius: 6px;
+  font: var(--button);
+  text-transform: uppercase;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 13px;
+  padding-block-end: 13px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.button.is-secondary {
+  background: unset;
+  border: solid 2px var(--blue4);
+}
