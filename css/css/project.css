@@ -11,20 +11,14 @@
   max-inline-size: 100%;
 }
 
+.project-tools {
+  font: var(--caption);
+}
+
 .project-text {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.project-title {
-  align-self: flex-start;
-  background: var(--blue4);
-  padding: 4px 8px;
-  box-shadow: -4px 4px 0 #3d5af1;
-  text-decoration: none;
-  color: var(--blue2);
-  font: var(--headline5);
 }
 
 @media screen and (min-width: 768px) {

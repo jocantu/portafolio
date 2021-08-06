@@ -17,10 +17,10 @@
                     <div class="header-content">
                         <img src="./images/logo.svg" width="80px" alt="Logo">
                         <nav class="menu" aria-label="main-navigation">
-                            <ul>
-                                <li><a class="is-active" href="#main">Hola</a></li>
-                                <li><a href="#projects">Proyectos</a></li>
-                                <li><a href="#contact">Hablemos</a></li>
+                            <ul id="navList">
+                                <li><a class="link is-active" href="#main">Hola</a></li>
+                                <li><a class="link" href="#projects">Proyectos</a></li>
+                                <li><a class="link" href="#form">Hablemos</a></li>
                             </ul>
                         </nav>
                         <button class="button">Curriculum</button>
@@ -56,7 +56,7 @@
         <div class="comment-card">
             <img src="./images/marcela.jpg" width="94px" alt="Foto Marcela, testimonio.">
             <p>“Joel nos ayudo a crear una plataforma educativa onilne que fue clave durante la pandemía para mantener y atraer nuevos clientes.”</p>
-            <p>MARCELA MIJARES/ KENIN CONSULTORIA</p>
+            <p>MARCELA MIJARES / KENIN CONSULTORIA</p>
         </div>
         <div class="project">
             <div class="project-screenshot">
@@ -70,6 +70,11 @@
                 <a href="#" class="button is-secondary" target="_blank">Código</a>
             </div>
         </div>
+        <div class="comment-card">
+            <img src="./images/carolina.jpg" width="94px" alt="Foto Marcela, testimonio.">
+            <p>“La herramienta que Joel creo facilitó la tarea de comunicar los alcances de nuestra investigación de una manera interactiva.</p>
+            <p>CAROLINA MARTINEZ / GROUNDWATER RESEARCHER, UNAM</p>
+        </div>
         <div class="project">
             <div class="project-screenshot">
                 <img src="./images/ipad.png" width="338px" alt="Miniatura proyecto uno">
@@ -81,6 +86,11 @@
                 <a href="#" class="button" target="_blank">Ver projecto</a>
                 <a href="#" class="button is-secondary" target="_blank">Código</a>
             </div>
+        </div>
+        <div class="comment-card">
+            <img src="./images/alejandro.jpg" width="94px" alt="Foto Marcela, testimonio.">
+            <p>“Gracias a Joel nuestro sitio web pudo canalizar más clientes y dar a conocer de mejor forma nuestros productos y servicios.”</p>
+            <p>ALEJANDRO  CRUZ / CEO TRANSPOINOVA DEL NORESTE</p>
         </div>
         <div class="project">
             <div class="project-screenshot">
@@ -135,6 +145,21 @@
                 $form.reset()
                 alert('Gracias por contactarme, te escribiré pronto.')
             }
+        }
+
+        // Get the container element
+        var btnContainer = document.getElementById("navList");
+
+        // Get all buttons with class="btn" inside the container
+        var links = btnContainer.getElementsByClassName("link");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("is-active");
+            current[0].className = current[0].className.replace(" is-active", "");
+            this.className += " is-active";
+        });
         }
     </script>
 </body>
